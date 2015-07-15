@@ -1,1 +1,0 @@
-RedisBackup_10.130.83.110_11002(ткн╛о╣мЁ):aof save not config. not found aof file:/data/redis-server/backend_master_11002/appendonly.aof.    ---redismonitor 2015-07-06 16:54:19
