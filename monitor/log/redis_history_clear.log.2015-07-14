@@ -1,0 +1,22 @@
+2015-07-14 14:51:06,462 redis_history_clear.py[line:61] INFO clear history data begin...
+2015-07-14 14:51:06,473 redis_history_clear.py[line:31] DEBUG sql:delete from redis_coldback_info where date <'2015-06-14'
+2015-07-14 14:51:06,473 redis_history_clear.py[line:34] DEBUG sql:delete from alarm_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:06,474 redis_history_clear.py[line:37] DEBUG sql:delete from redis_keyspace_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:06,475 redis_history_clear.py[line:40] DEBUG sql:delete from redis_persistence_status_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:06,475 redis_history_clear.py[line:43] DEBUG sql:delete from redis_replication_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:06,476 redis_history_clear.py[line:46] DEBUG sql:delete from redis_resource_status_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:06,477 redis_history_clear.py[line:49] DEBUG sql:delete from redis_run_status_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:06,478 redis_history_clear.py[line:52] DEBUG sql:delete from redis_server_status_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:06,478 redis_history_clear.py[line:55] DEBUG tCmd:rm -f ./log/*2015-06-14
+2015-07-14 14:51:06,481 redis_history_clear.py[line:63] INFO clear history data end...
+2015-07-14 14:51:47,108 redis_history_clear.py[line:61] INFO clear history data begin...
+2015-07-14 14:51:47,119 redis_history_clear.py[line:31] DEBUG sql:delete from redis_coldback_info where date <'2015-06-14'
+2015-07-14 14:51:47,120 redis_history_clear.py[line:34] DEBUG sql:delete from alarm_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:47,121 redis_history_clear.py[line:37] DEBUG sql:delete from redis_keyspace_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:47,122 redis_history_clear.py[line:40] DEBUG sql:delete from redis_persistence_status_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:47,123 redis_history_clear.py[line:43] DEBUG sql:delete from redis_replication_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:47,124 redis_history_clear.py[line:46] DEBUG sql:delete from redis_resource_status_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:47,124 redis_history_clear.py[line:49] DEBUG sql:delete from redis_run_status_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:47,125 redis_history_clear.py[line:52] DEBUG sql:delete from redis_server_status_history where left(create_time,10)<'2015-06-14'
+2015-07-14 14:51:47,126 redis_history_clear.py[line:55] DEBUG tCmd:rm -f ./log/*2015-06-14
+2015-07-14 14:51:47,129 redis_history_clear.py[line:63] INFO clear history data end...

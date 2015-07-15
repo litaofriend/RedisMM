@@ -1,0 +1,54 @@
+body{
+	background: #E3E3E3;
+	font-family: Arial;
+}
+
+#container{
+	margin: 0 auto;
+	background: #fff;
+	width: 960px;
+	color: #333;
+	padding: 15px;
+	margin-top: 0;
+}
+
+h3{
+	font-size:18px;
+	color: #333;
+}
+
+textarea{
+	width: 960px;
+}
+
+pre{
+	font-size: 11px;
+	font-family: verdana;
+}
+
+#info{
+	padding: 10px 0px;
+}
+
+.text-core .text-tag .text-button {
+    padding-left : 10px !important;
+	padding-right: 10px;
+}
+
+.text-core .text-wrap .text-tags .text-tag .text-button {
+	padding: 10px;
+}
+
+.text-core .text-tag .custom-edit {
+    display    : block;
+    width      : 16px;
+    height     : 16px;
+    background : url(/images/tag_blue.png);
+    position   : absolute;
+    left       : 2px;
+    top        : 0px;
+}
+
+.text-core .text-tag .custom-edit:hover {
+    background : url(/images/tag_blue_edit.png);
+}

@@ -1,0 +1,352 @@
+2015-07-09 17:31:53: controller started.
+Traceback (most recent call last):
+  File "check_redis_status.py", line 12, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "check_redis_status.py", line 12, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "redis_data_back.py", line 14, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "check_redis_status.py", line 12, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+Traceback (most recent call last):
+  File "alarm_redis.py", line 9, in <module>
+    import global_functions as func
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 106, in <module>
+    mail_host = get_config('mail_server','mail_host')
+  File "/data/wwwroot/redisMM/monitor/global_functions.py", line 26, in get_config
+    config_value=config.get(group,config_name).strip(' ').strip('\'').strip('\"')
+  File "/usr/local/python/lib/python2.7/ConfigParser.py", line 607, in get
+    raise NoSectionError(section)
+ConfigParser.NoSectionError: No section: 'mail_server'
+send sms success.

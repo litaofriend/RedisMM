@@ -1,0 +1,63 @@
+#!/usr/bin/expect  --
+
+if { [llength $argv] < 5 } {
+	puts "### USAGE: ip port user  passwd command_line timeout"
+	exit 5
+}
+
+set user [lindex $argv 2]
+set passwd [lindex $argv 3]
+set ip [lindex $argv 0]
+set port [lindex $argv 1]
+set timeout 60
+if { [llength $argv] > 5 } {
+	set timeout [lindex $argv 5]
+}
+
+set command "[lindex $argv 4]"
+
+set PRE "*password:"
+
+set SSH /usr/local/bin/ssh
+if {[ file exists /usr/bin/ssh ]} {
+set SSH  /usr/bin/ssh
+}
+
+spawn -noecho $SSH -q -t $user@$ip -p$port "$command"
+
+
+while {1} {
+expect 	{
+
+	"Interrupted system call" {
+		exit 2	
+	}
+
+	"couldn't execute" {
+		exit 3
+	}
+
+	"${PRE}" {
+		send "$passwd\r" 
+
+		expect {
+			"${PRE}" { exit 1 }
+			"Old Password" {exit 1}
+			"Changing password for" { exit 1 }
+			timeout { exit 7 }
+			eof {break}
+		}
+	}
+	
+	"yes/no)?" {
+		send "yes\r"
+		continue
+	}
+
+	timeout { exit 4 }
+	eof {break}
+}
+}
+
+exit 0
+

@@ -1,0 +1,85 @@
+#!/usr/bin/expect  --
+
+if { [llength $argv] < 10 } {
+	puts "### USAGE: ip_a port_a user_a passwd_a file_a ip_b port_b user_b passwd_b file_b timeout"
+	exit 11
+}
+
+set ip_a [lindex $argv 0]
+set port_a [lindex $argv 1]
+set user_a [lindex $argv 2]
+set passwd_a [lindex $argv 3]
+set file_a [lindex $argv 4]
+set ip_b [lindex $argv 5]
+set port_b [lindex $argv 6]
+set user_b [lindex $argv 7]
+set passwd_b [lindex $argv 8]
+set file_b [lindex $argv 9]
+
+set timeout 120 
+if { [llength $argv] > 10 } {
+	set timeout [lindex $argv 10]
+}
+
+set PASS_A "${user_a}@${ip_a}*password:"
+set PASS_B "${user_b}@${ip_b}*password:"
+
+#¼ÆËãscpÂ·¾¶
+set SCP /usr/local/bin/scp
+if {[ file exists /usr/bin/scp ]} {
+set SCP  /usr/bin/scp
+}
+
+spawn -noecho $SCP $user_a@$ip_a\#${port_a}:$file_a $user_b@$ip_b\#${port_b}:$file_b
+
+while {1} {
+expect 	{
+
+	"Interrupted system call" {
+		exit 2	
+	}
+
+	"couldn't execute" {
+		exit 3
+	}
+
+	"${PASS_A}" {
+		send "${passwd_a}\r" 
+
+		expect {
+			"${PASS_A}" { exit 1 }
+			"${PASS_B}" { send "${passwd_b}\r" }
+			"Old Password" {exit 1}
+			"Changing password for" { exit 1 }
+                        "yes/no)?" {send "yes\r";continue}
+			timeout { exit 7 }
+			eof {break}
+		}
+	}
+
+	"${PASS_B}" {
+                send "${passwd_b}\r"
+
+                expect {
+                        "${PASS_A}" { send "${passwd_a}\r" }
+                        "${PASS_B}" { exit 1 }
+                        "Old Password" {exit 1}
+                        "Changing password for" { exit 1 }
+                        "yes/no)?" {send "yes\r";continue}
+                        timeout { exit 7 }
+                        eof {break}
+                }
+        }
+
+	"yes/no)?" {
+		send "yes\r"
+		continue
+	}
+
+	timeout { exit 4 }
+	eof {break}
+}
+}
+
+exit 0
+
