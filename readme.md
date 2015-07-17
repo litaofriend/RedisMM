@@ -45,6 +45,9 @@ Redis版本：>=2.4，小于此版本未经测试。
   1)安装lamp配置环境,配置apache并重启 ./apachectl -k restart
   2)配置frontweb/application/config/database.php，同monitor/conf/config.ini中的配置。
 ```
++ 登录系统
+  默认分配admin超级帐号，密码默认为admin
+
 + 附apache配置示例：
 ```bash
   <VirtualHost yourip:port>
