@@ -13,17 +13,19 @@
 
 ##配置
 + 后台配置：
-
+```bash
   1)初始化mysql库表。按照sql/init.txt执行。
   2)配置项。monitor/conf/config.ini中配置monitor_server项。
   3)告警接口。monitor/global_functions.py中send_alarm配置您公司的告警接口。
   4)启动。monitor/redisMM_ctl.sh  Usage: ./redisMM_ctl.sh {start|stop|restart|status}
-  
+```
 + 前台配置：
+```bash
   1)安装lamp配置环境,配置apache并重启 ./apachectl -k restart
   2)配置frontweb/application/config/database.php，同monitor/conf/config.ini中的配置。
-
+```
 + 附apache配置示例：
+```bash
   <VirtualHost yourip:port>
     DocumentRoot "/data/redisMM/frontweb"
 
@@ -38,6 +40,7 @@
       Allow from all
     </Directory>
   </VirtualHost>
+```
 
 ##系统截图
 * 进程状态
