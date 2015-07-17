@@ -46,7 +46,8 @@ Redis版本：>=2.4，小于此版本未经测试。
   2)配置frontweb/application/config/database.php，同monitor/conf/config.ini中的配置。
 ```
 + 登录系统:
-  默认分配admin超级帐号，密码默认为admin.  [使用文档](doc/tutorial.md)
+  默认分配admin超级帐号，密码默认为admin.  
++ [使用文档](doc/tutorial.md)
 
 + 附apache配置示例：
 ```bash
