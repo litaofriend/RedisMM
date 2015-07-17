@@ -36,8 +36,32 @@ Redis版本：>2.4，小于此版本未经测试。
     </Directory>
 </VirtualHost>
 
+进程状态
+![image](doc/images/process_status.png)
 运行状态
-![main](doc/images/run_status.png)
+![image](doc/images/run_status.png)
+资源状态
+![image](doc/images/resource_monitor.png)
+键状态
+![image](doc/images/key_status.png)
+备份状态
+![image](doc/images/backup_status.png)
+主备状态
+![image](doc/images/master_slave_status.png)
+冷备
+![image](doc/images/coldback.png)
+内存使用图表
+![image](doc/images/mem_use_pic.png)
+键状态图表
+![image](doc/images/key_status_pic.png)
+键查找图表
+![image](doc/images/key_search_pic.png)
+连接状态图表
+![image](doc/images/connections_pic.png)
+主机管理
+![image](doc/images/host_manage.png)
+告警展示
+![image](doc/images/alarm.png)
 
 本系统实际使用中监控近100个实例，运行状态良好。这是本人的第一个开源项目，希望大家多多鼓励支持，并在使用过程中提出宝贵意见，再进行系统的不断优化，谢谢！
 网址：
