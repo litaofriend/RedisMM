@@ -12,17 +12,18 @@
 * 告警项：是否可用、连接数、内存、复制状态告警。用户可以配置是否告警、告警阈值、告警接收人、告警间隔、告警方式以及告警的收敛方式。
 
 ##配置
-* 后台配置：
++ 后台配置：
+
   1)初始化mysql库表。按照sql/init.txt执行。
   2)配置项。monitor/conf/config.ini中配置monitor_server项。
   3)告警接口。monitor/global_functions.py中send_alarm配置您公司的告警接口。
   4)启动。monitor/redisMM_ctl.sh  Usage: ./redisMM_ctl.sh {start|stop|restart|status}
   
-* 前台配置：
++ 前台配置：
   1)安装lamp配置环境,配置apache并重启 ./apachectl -k restart
   2)配置frontweb/application/config/database.php，同monitor/conf/config.ini中的配置。
 
-* 附apache配置示例：
++ 附apache配置示例：
   <VirtualHost yourip:port>
     DocumentRoot "/data/redisMM/frontweb"
 
@@ -39,32 +40,36 @@
   </VirtualHost>
 
 ##系统截图
-进程状态
+* 进程状态
 ![image](doc/images/process_status.png)
-运行状态
+* 运行状态
 ![image](doc/images/run_status.png)
-资源状态
+* 资源状态
 ![image](doc/images/resource_monitor.png)
-键状态
+* 键状态
 ![image](doc/images/key_status.png)
-备份状态
+* 备份状态
 ![image](doc/images/backup_status.png)
-主备状态
+* 主备状态
 ![image](doc/images/master_slave_status.png)
-冷备
+* 冷备
 ![image](doc/images/coldback.png)
-内存使用图表
+* 内存使用图表
 ![image](doc/images/mem_use_pic.png)
-键状态图表
+* 键状态图表
 ![image](doc/images/key_status_pic.png)
-键查找图表
+* 键查找图表
 ![image](doc/images/key_search_pic.png)
-连接状态图表
+* 连接状态图表
 ![image](doc/images/connections_pic.png)
-主机管理
+* 主机管理
 ![image](doc/images/host_manage.png)
-告警展示
+* 告警展示
 ![image](doc/images/alarm.png)
 
 本系统实际使用中监控近100个实例，运行状态良好。这是本人的第一个开源项目，希望大家多多鼓励支持，并在使用过程中提出宝贵意见，再进行系统的不断优化，谢谢！
+
+##作者
+* blythli
+
 
