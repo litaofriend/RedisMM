@@ -1,7 +1,7 @@
 ##使用文档
 * 1、全局配置:
 使用默认配置即可，可以根据需要添加系统负责人。
-![image](doc/images/option.png)
+![image](images/option.png)
 
 * 2、添加一个业务
 
