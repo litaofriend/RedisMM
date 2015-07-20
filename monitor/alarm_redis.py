@@ -48,7 +48,7 @@ def get_alarm_redis_server_status():
             else:
                 pass
     else:
-       log.error("ERROR:exe sql failed, %s"%(sql))
+       #log.error("ERROR:exe sql failed, %s"%(sql))
        pass
 
 

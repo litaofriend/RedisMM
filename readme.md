@@ -37,8 +37,9 @@ Redis版本：>=2.4，小于此版本未经测试。
 ```bash
   1)初始化mysql库表。按照sql/init.txt执行。
   2)配置项。monitor/conf/config.ini中配置monitor_server项。
-  3)告警接口。monitor/global_functions.py中send_alarm配置您公司的告警接口。
-  4)启动。monitor/redisMM_ctl.sh  Usage: ./redisMM_ctl.sh {start|stop|restart|status}
+  3)python安装redis模块。https://pypi.python.org/pypi?%3Aaction=search&term=redis&submit=search下载redis 2.10.3模块，解压安装：python setup.py install
+  4)告警接口。monitor/global_functions.py中send_alarm配置您公司的告警接口。
+  5)启动。monitor/redisMM_ctl.sh  Usage: ./redisMM_ctl.sh {start|stop|restart|status}
 ```
 + 前台配置：
 ```bash
