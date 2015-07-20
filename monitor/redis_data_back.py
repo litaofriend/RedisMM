@@ -53,7 +53,7 @@ def back_aof_file(server_id,display_name,port,IP,ssh_port,ssh_user,ssh_passwd,ba
         send_alarm_flag=True
     #check file size
     aof_file=dir+"/"+"appendonly.aof"
-    tCmd="/usr/bin/expect /data/wwwroot/redisMM/monitor/exec_user_cmd.exp "+IP+" "+ssh_port+" "+ssh_user+" '"+ssh_passwd+"' 'du -b "+aof_file+"' 60"
+    tCmd="/usr/bin/expect exec_user_cmd.exp "+IP+" "+ssh_port+" "+ssh_user+" '"+ssh_passwd+"' 'du -b "+aof_file+"' 60"
     log.debug("tCmd:%s"%(tCmd))
     (status, output) = commands.getstatusoutput(tCmd)
     log.debug("output:%s"%(output))
@@ -73,7 +73,7 @@ def back_aof_file(server_id,display_name,port,IP,ssh_port,ssh_user,ssh_passwd,ba
                     if int(status2)!=0:
                         log.debug("exe error!%s" %(tCmd))
                     #check remote file
-                    tCmd="/usr/bin/expect /data/wwwroot/redisMM/monitor/exec_user_cmd.exp "+back_IP+" "+back_ssh_port+" "+back_ssh_user+" '"+back_ssh_passwd+"' 'du -b "+remote_aof_file+"' 60"
+                    tCmd="/usr/bin/expect exec_user_cmd.exp "+back_IP+" "+back_ssh_port+" "+back_ssh_user+" '"+back_ssh_passwd+"' 'du -b "+remote_aof_file+"' 60"
                     log.debug("tCmd:%s"%(tCmd))
                     (status3, output3) = commands.getstatusoutput(tCmd)
                     log.debug("output:%s"%(output3))
@@ -117,7 +117,7 @@ def back_rdb_file(server_id,display_name,port,IP,ssh_port,ssh_user,ssh_passwd,ba
         send_alarm_flag=True
     #check file size
     rdb_file=dir+"/"+rdb_dbfilename
-    tCmd="/usr/bin/expect /data/wwwroot/redisMM/monitor/exec_user_cmd.exp "+IP+" "+ssh_port+" "+ssh_user+" '"+ssh_passwd+"' 'du -b "+rdb_file+"' 60"
+    tCmd="/usr/bin/expect exec_user_cmd.exp "+IP+" "+ssh_port+" "+ssh_user+" '"+ssh_passwd+"' 'du -b "+rdb_file+"' 60"
     log.debug("tCmd:%s"%(tCmd))
     (status, output) = commands.getstatusoutput(tCmd)
     log.debug("output:%s"%(output))
@@ -137,7 +137,7 @@ def back_rdb_file(server_id,display_name,port,IP,ssh_port,ssh_user,ssh_passwd,ba
                     if int(status2)!=0:
                         log.error("exe error!%s" %(tCmd))
                     #check remote file
-                    tCmd="/usr/bin/expect /data/wwwroot/redisMM/monitor/exec_user_cmd.exp "+back_IP+" "+back_ssh_port+" "+back_ssh_user+" '"+back_ssh_passwd+"' 'du -b "+remote_rdb_file+"' 60"
+                    tCmd="/usr/bin/expect exec_user_cmd.exp "+back_IP+" "+back_ssh_port+" "+back_ssh_user+" '"+back_ssh_passwd+"' 'du -b "+remote_rdb_file+"' 60"
                     log.debug("tCmd:%s"%(tCmd))
                     (status3, output3) = commands.getstatusoutput(tCmd)
                     log.debug("output:%s"%(output3))
@@ -176,7 +176,7 @@ def backup_data(log):
     #test
     #sql="delete from redis_coldback_info where server_id='3';"
     #func.mysql_exec(sql,'')
-    sql="select server_id,IP,ssh_port,ssh_user,ssh_passwd,back_IP,back_ssh_port,back_ssh_user,back_ssh_passwd,back_path,db_name,back_cycle,save_number,alarm_flag,charge_person from redis_coldback_config where back_flag='y' and back_time<='"+current_minute+"' and server_id not in (select distinct server_id from redis_coldback_info where date='"+current_date+"');"
+    sql="select server_id,IP,ssh_port,ssh_user,ssh_passwd,back_IP,back_ssh_port,back_ssh_user,back_ssh_passwd,back_path,db_name,back_cycle,save_number,alarm_flag,charge_person from redis_coldback_config where back_flag='y' and back_time<='"+current_minute+"' and server_id not in (select distinct server_id from redis_coldback_info where suc_flag='y' and date='"+current_date+"');"
     servers=func.mysql_query(sql)
     #print sql
     #frequency_monitor = func.get_option('frequency_monitor')
@@ -302,7 +302,7 @@ def delete_old_data(log):
                     for file in file_name_del:
                         file_name=file[0]
                         remote_file=back_path+"/"+file_name
-                        tCmd="/usr/bin/expect /data/wwwroot/redisMM/monitor/exec_user_cmd.exp "+back_IP+" "+back_ssh_port+" "+back_ssh_user+" '"+back_ssh_passwd+"' 'rm -f "+remote_file+";ls -l "+remote_file+";' 120"
+                        tCmd="/usr/bin/expect exec_user_cmd.exp "+back_IP+" "+back_ssh_port+" "+back_ssh_user+" '"+back_ssh_passwd+"' 'rm -f "+remote_file+";ls -l "+remote_file+";' 120"
                         log.debug("tCmd:%s"%(tCmd))
                         (status, output) = commands.getstatusoutput(tCmd)
                         log.debug("output:%s"%(output))

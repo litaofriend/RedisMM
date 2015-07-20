@@ -30,7 +30,8 @@ if {[ file exists /usr/bin/scp ]} {
 set SCP  /usr/bin/scp
 }
 
-spawn -noecho $SCP $user_a@$ip_a\#${port_a}:$file_a $user_b@$ip_b\#${port_b}:$file_b
+#spawn -noecho $SCP $user_a@$ip_a\#${port_a}:$file_a $user_b@$ip_b\#${port_b}:$file_b
+spawn -noecho $SCP -P${port_a} $user_a@$ip_a:$file_a $user_b@$ip_b:$file_b
 
 while {1} {
 expect 	{
