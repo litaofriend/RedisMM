@@ -70,8 +70,8 @@ class Servers extends Front_Controller {
             $this->form_validation->set_rules('threshold_connections',  'lang:threshold_connections', 'trim|required|integer');
             $this->form_validation->set_rules('threshold_used_memory',  'lang:threshold_used_memory', 'trim|required|integer');
             $this->form_validation->set_rules('threshold_repl_delay',  'lang:threshold_repl_delay', 'trim|required|integer');
-            $this->form_validation->set_rules('threshold_slow_querys',  'lang:threshold_slow_querys', 'trim|required|integer');
-            $this->form_validation->set_rules('threshold_error_querys',  'lang:threshold_error_querys', 'trim|required|integer');
+            /*$this->form_validation->set_rules('threshold_slow_querys',  'lang:threshold_slow_querys', 'trim|required|integer');
+            $this->form_validation->set_rules('threshold_error_querys',  'lang:threshold_error_querys', 'trim|required|integer');*/
  	    if ($this->form_validation->run() == FALSE)
 	   {
  	   	$data['error_code']='validation_error';
@@ -99,9 +99,9 @@ class Servers extends Front_Controller {
 	       	'converge_type'=>$this->input->post('converge_type'),
 	       	'alarm_person'=>$this->input->post('alarm_person'),
 	       	'alarm_slow_querys'=>$this->input->post('alarm_slow_querys'),
-	       	'threshold_slow_querys'=>$this->input->post('threshold_slow_querys'),
+	       	/*'threshold_slow_querys'=>$this->input->post('threshold_slow_querys'),
 	       	'alarm_error_querys'=>$this->input->post('alarm_error_querys'),
-	       	'threshold_error_querys'=>$this->input->post('threshold_error_querys'),
+	       	'threshold_error_querys'=>$this->input->post('threshold_error_querys'),*/
 		);
 	      $this->servers->insert($data);
               redirect(site_url('servers/index'));
@@ -131,8 +131,8 @@ class Servers extends Front_Controller {
             $this->form_validation->set_rules('threshold_connections',  'lang:threshold_connections', 'trim|required|integer');
             $this->form_validation->set_rules('threshold_used_memory',  'lang:threshold_used_memory', 'trim|required|integer');
             $this->form_validation->set_rules('threshold_repl_delay',  'lang:threshold_repl_delay', 'trim|required|integer');
-            $this->form_validation->set_rules('threshold_slow_querys',  'lang:threshold_slow_querys', 'trim|required|integer');
-            $this->form_validation->set_rules('threshold_error_querys',  'lang:threshold_error_querys', 'trim|required|integer');
+/*            $this->form_validation->set_rules('threshold_slow_querys',  'lang:threshold_slow_querys', 'trim|required|integer');
+            $this->form_validation->set_rules('threshold_error_querys',  'lang:threshold_error_querys', 'trim|required|integer');*/
 	    if ($this->form_validation->run() == FALSE)
 	    {
 		$data['error_code']='validation_error';
@@ -159,9 +159,9 @@ class Servers extends Front_Controller {
 	            'converge_type'=>$this->input->post('converge_type'),
 	            'alarm_person'=>$this->input->post('alarm_person'),
 	            'alarm_slow_querys'=>$this->input->post('alarm_slow_querys'),
-	            'threshold_slow_querys'=>$this->input->post('threshold_slow_querys'),
+/*	            'threshold_slow_querys'=>$this->input->post('threshold_slow_querys'),
 	            'alarm_error_querys'=>$this->input->post('alarm_error_querys'),
-	            'threshold_error_querys'=>$this->input->post('threshold_error_querys'),
+	            'threshold_error_querys'=>$this->input->post('threshold_error_querys'),*/
 		);
 		$this->servers->update($data,$id);
                 redirect(site_url('servers/index'));

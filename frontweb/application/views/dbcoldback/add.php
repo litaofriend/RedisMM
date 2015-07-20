@@ -68,7 +68,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;端口&nbsp;<input type="text" id="back_ssh_port"  name="back_ssh_port" value="22" class="input-small" placeholder="ssh端口" title="ssh端口">
       用户名&nbsp;<input type="text" id="back_ssh_user"  name="back_ssh_user" value="root" class="input-small" placeholder="ssh用户名" title="ssh用户名">
       密码&nbsp;<input type="text" id="back_ssh_passwd"  name="back_ssh_passwd" value="" class="input-small" placeholder="ssh密码" title="ssh密码">
-      <span class="help-inline">可为空，系统从PWD自动获取</span>
+      <!--span class="help-inline">可为空，系统从PWD自动获取</span-->
     </div>
    </div>
 
