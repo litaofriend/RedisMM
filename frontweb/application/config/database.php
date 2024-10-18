@@ -50,8 +50,8 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = '*.*.*.*';
 $db['default']['port']     = '3306';
-$db['default']['username'] = 'redisMM';
-$db['default']['password'] = 'redisMM_pass';
+$db['default']['username'] = '*';
+$db['default']['password'] = '*';
 $db['default']['database'] = 'db_RedisMM';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
