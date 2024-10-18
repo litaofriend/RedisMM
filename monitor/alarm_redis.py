@@ -211,7 +211,7 @@ def send_warn():
     sql="select alarm_last_status.application_id,app.display_name application,alarm_last_status.server_id,servers.host,servers.port,alarm_last_status.modify_time,servers.alarm_interval,servers.alarm_type,servers.converge_type,servers.alarm_person,servers.send_mail,alarm_last_status.connect,alarm_last_status.status_connections,alarm_last_status.status_used_memory,alarm_last_status.status_binlog_count,alarm_last_status.status_innodb_space_free,alarm_last_status.status_replication_relay,alarm_last_status.alarm_num,alarm_last_status.time_error_continue,alarm_last_status.slow_querys,alarm_last_status.status_slow_querys,alarm_last_status.error_log,alarm_last_status.status_error_log from alarm_last_status left join servers on alarm_last_status.server_id=servers.id left join application app on servers.application_id=app.id;"
     result=func.mysql_query(sql)
     if result <> 0:
-	domain="www.oa.com"
+	domain="**.com"
 	if(pingServerCall(domain)==False):
             #系统告警接收人
 	    mailto_list = func.get_option('mail_to_list')
